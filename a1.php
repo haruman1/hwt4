@@ -10,12 +10,12 @@ require_once("sdata-modules.php");
 
 
 ##############################################################################################################
-$config['deviceCode'] 		= '358167070147132';
+$config['deviceCode'] 		        = '358167070147132';
 $config['tk'] 				= 'ACHQWTXY731CMoQ5eHcHk42QU5xQrIiMMl1xdHRodw';
 $config['token'] 			= '4fd6xxqAlolMOdEHyyo_Hj30fGqY5A1WfUpFyqtBW6wvjqSXWwGA8kEQr_dwwVlrxmfRMVLR0xVkciI';
 $config['uuid'] 			= '3ba73b8fbaf849a29cd7d229ad1f94aa';
 $config['sign'] 			= '2c3e573b952e4fff9f9a0b0bba981991';
-$config['android_id'] 		= 'ae77528b3f341593';
+$config['android_id'] 		        = 'ae77528b3f341593';
 ##############################################################################################################
 
 
@@ -47,7 +47,7 @@ for ($x=0; $x <1; $x++) {
 			'note' 	=> $rnd, 
 		);
 		$header[] = array(
-			'post' => 'OSVersion=8.0.0&android_channel=google&android_id='.$config['android_id'].'&content_id='.$id.'&content_type=1&deviceCode='.$config['deviceCode'].'&device_brand=samsung&device_ip=114.124.239.'.rand(0,255).'&device_version=SM-A730F&dtu=001&lat=&lon=&network=wifi&pack_channel=google&time='.$timeIn30Minutes.'&tk='.$config['tk'].'&token='.$config['token'].'&uuid='.$config['uuid'].'&version=10047&versionName=1.4.7&sign='.$config['sign'], 
+			'post' => 'OSVersion=7.0.0&android_channel=google&android_id='.$config['android_id'].'&content_id='.$id.'&content_type=1&deviceCode='.$config['deviceCode'].'&device_brand=samsung&device_ip=192.168.0.3.'.rand(0,255).'&device_version=SM-G940FD&dtu=001&lat=&lon=&network=wifi&pack_channel=google&time='.$timeIn30Minutes.'&tk='.$config['tk'].'&token='.$config['token'].'&uuid='.$config['uuid'].'&version=15008&versionName=1.0.8&sign='.$config['sign'], 
 		);
 		$respons = $sdata->sdata($url , $header); 
 		unset($url);unset($header);
